@@ -1,2 +1,7 @@
 grpc:
   port: 55555
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

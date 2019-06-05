@@ -10,7 +10,7 @@ import me.dinowernli.grpc.prometheus.MonitoringServerInterceptor;
 
 public class GrpcServer {
 
-    @GRpcService(interceptors = MonitoringServerInterceptor.class)
+    @GRpcService(interceptors = {MonitoringServerInterceptor.class})
 	public static class GreeterImpl extends GreeterImplBase {
 		@Override
 		public void sayHello(HelloRequest request, io.grpc.stub.StreamObserver<HelloReply> responseObserver) {
