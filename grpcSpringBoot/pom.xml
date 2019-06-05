@@ -38,88 +38,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>me.dinowernli</groupId>
-			<artifactId>java-grpc-prometheus</artifactId>
-			<version>0.3.0</version>
-			<exclusions>
-				<exclusion>
-					<groupId>io.grpc</groupId>
-					<artifactId>grpc-all</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>io.prometheus</groupId>
-					<artifactId>simpleclient</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<dependency>
-			<groupId>io.prometheus</groupId>
-			<artifactId>simpleclient</artifactId>
-			<version>0.6.0</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>io.github.lognet</groupId>
+			<groupId>net.devh</groupId>
 			<artifactId>grpc-spring-boot-starter</artifactId>
-			<version>3.2.2</version>
+			<version>2.4.0.RELEASE</version>
 		</dependency>
-
-<!-- 		<dependency> -->
-<!-- 			<groupId>net.devh</groupId> -->
-<!-- 			<artifactId>grpc-server-spring-boot-starter</artifactId> -->
-<!-- 			<version>2.4.0.RELEASE</version> -->
-<!-- 		</dependency> -->
-
-		<dependency>
-			<groupId>io.opentracing.contrib</groupId>
-			<artifactId>opentracing-grpc</artifactId>
-			<version>0.1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.jaegertracing</groupId>
-			<artifactId>jaeger-core</artifactId>
-			<version>0.35.5</version>
-		</dependency>
-		<dependency>
-			<groupId>io.jaegertracing</groupId>
-			<artifactId>jaeger-client</artifactId>
-			<version>0.35.5</version>
-		</dependency>
-		<dependency>
-			<groupId>io.jaegertracing</groupId>
-			<artifactId>jaeger-thrift</artifactId>
-			<version>0.35.5</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.opentracing</groupId>
-			<artifactId>opentracing-api</artifactId>
-			<version>0.33.0</version>
-		</dependency>
-		<!-- <dependency> -->
-		<!-- <groupId>me.dinowernli</groupId> -->
-		<!-- <artifactId>java-grpc-prometheus</artifactId> -->
-		<!-- <version>0.3.0</version> -->
-		<!-- <exclusions> -->
-		<!-- <exclusion> -->
-		<!-- <groupId>io.grpc</groupId> -->
-		<!-- <artifactId>grpc-all</artifactId> -->
-		<!-- </exclusion> -->
-		<!-- <exclusion> -->
-		<!-- <groupId>io.prometheus</groupId> -->
-		<!-- <artifactId>simpleclient</artifactId> -->
-		<!-- </exclusion> -->
-		<!-- </exclusions> -->
-		<!-- </dependency> -->
-
-		<!-- <dependency> -->
-		<!-- <groupId>io.prometheus</groupId> -->
-		<!-- <artifactId>simpleclient</artifactId> -->
-		<!-- <version>0.6.0</version> -->
-		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

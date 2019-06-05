@@ -1,5 +1,16 @@
+spring:
+  application:
+    name: local-grpc-server
 grpc:
-  port: 55555
+  server:
+    port: 55555
+  client:
+    local-grpc-server:
+      address: 'static://127.0.0.1:55555'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+
 management:
   endpoints:
     web:
