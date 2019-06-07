@@ -19,14 +19,7 @@ import net.devh.boot.grpc.client.inject.GrpcClient;
 public class TestController extends GreeterImplBase {
 
 	@GrpcClient("local-grpc-server")
-	private Channel channel;
-
 	private GreeterGrpc.GreeterBlockingStub client;
-
-	@PostConstruct
-	public void init() {
-		client = GreeterGrpc.newBlockingStub(channel);
-	}
 
 	@GetMapping("/sayHello/{executions}")
 	public void sayHello(@PathVariable("executions") int executions) {

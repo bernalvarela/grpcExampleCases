@@ -1,24 +1,20 @@
 package com.corunet.grpc.controller;
 
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.corunet.service.Service.HelloReply;
-import com.corunet.service.Service.HelloRequest;
-
-import io.micrometer.core.annotation.Timed;
+import com.corunet.grpc.dto.HelloReplyDto;
+import com.corunet.grpc.dto.HelloRequestDto;
 
 @RestController
-@Timed("greeter")
 public class GreeterController {
 
     @PostMapping(path= "/greeter/sayHello", consumes = "application/json", produces = "application/json")
-	public HelloReply sayHello(@RequestBody HelloRequest request) {
+	public HelloReplyDto sayHello(@RequestBody HelloRequestDto request) {
 		System.out.println("Name in received message: " + request.getName());
-		HelloReply reply = HelloReply.newBuilder().setMessage("Hello " + request.getName()).build();
+		HelloReplyDto reply = new HelloReplyDto();
+		reply.setMessage("Hello " + request.getName());
 		return reply;
 	}
 }

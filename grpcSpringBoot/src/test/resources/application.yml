@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: local-grpc-server
+grpc:
+  server:
+    port: 55556
+  client:
+    local-grpc-server:
+      address: 'static://127.0.0.1:55556'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext

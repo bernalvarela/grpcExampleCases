@@ -13,7 +13,7 @@
 	<artifactId>grpc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>grpc</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Grpc vs Http demo project for XantarDev</description>
 
 	<dependencies>
 		<dependency>
@@ -30,17 +30,20 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-prometheus</artifactId>
-			<version>1.1.4</version>
 		</dependency>
 
 		<dependency>
 			<groupId>net.devh</groupId>
 			<artifactId>grpc-spring-boot-starter</artifactId>
 			<version>2.4.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
